@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ Layout = "_NavCoordinatorLayout";
+}
+@model IFakeDataRepository
+
+<h2>Detaljer för ärende: @ViewBag.TId</h2>
+<p class="info">Du är inloggad som samordnare</p>
+
+@await Component.InvokeAsync("ShowOneCrime", ViewBag.TId)
+
+
+
+<section id="bottomColumn">
+    <h3>Redigera ärende</h3>
+    <p>
+        Ange enhet:
+        <select name="department">
+            <option selected="selected">Välj</option>
+            @foreach (Department departments in Model.Departments) {
+                <option>@departments.DepartmentName</option>
+            }
+        </select>
+    </p>
+    <p><input class="button" type="submit" value="Spara" /></p>
+</section>
