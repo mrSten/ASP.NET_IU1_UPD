@@ -10,8 +10,7 @@ namespace IU1.Models
   {
 
     //Vanlig text räcker i kontrollerna förutom mob.nr. samt datum
-
-    public String ID { get; set; }
+    public int ID { get; set; }
     public String RefNumber { get; set; }
 
     [Required(ErrorMessage = "Du måste fylla i en plats")]

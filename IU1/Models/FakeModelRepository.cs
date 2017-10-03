@@ -14,7 +14,7 @@ namespace IU1.Models
     {
       return Task.Run(() =>
       {
-        var oneCase = Cases.First(m => m.ID.Equals(id));
+        var oneCase = Cases.First(m => m.RefNumber.Equals(id));
         return oneCase;
       });
     }
@@ -59,23 +59,23 @@ namespace IU1.Models
     public IEnumerable<Case> Cases => new List<Case> {
       new Case
       {
-        ID = "2017-45-0001", Place = "Skogslunden vid Jensens gård", TypeOfCrime = "Sopor", DateOfObservation = new DateTime(2017, 04, 24), Observation = "Anmälaren var på promenad i skogslunden när hon upptäckte soporna", Info = "Undersökning har gjorts och bland soporna hittades bl.a ett brev till Gösta Olsson", Action = "Brev har skickats till Gösta Olsson om soporna och anmälan har gjorts till polisen 2017-05-10", InformerName = "Ada Bengtsson", InformerPhone = "0432-5545522", Status = "Klar", Department = "Renhållning och avfall", Employee = "Susanne Fred"
+        RefNumber = "2017-45-0001", Place = "Skogslunden vid Jensens gård", TypeOfCrime = "Sopor", DateOfObservation = new DateTime(2017, 04, 24), Observation = "Anmälaren var på promenad i skogslunden när hon upptäckte soporna", Info = "Undersökning har gjorts och bland soporna hittades bl.a ett brev till Gösta Olsson", Action = "Brev har skickats till Gösta Olsson om soporna och anmälan har gjorts till polisen 2017-05-10", InformerName = "Ada Bengtsson", InformerPhone = "0432-5545522", Status = "Klar", Department = "Renhållning och avfall", Employee = "Susanne Fred"
       },
       new Case
       {
-        ID = "2017-45-0002", Place = "Småstadsjön", TypeOfCrime = "Oljeutsläpp", DateOfObservation = new DateTime(2017, 04, 29), Observation = "Jag såg en oljefläck på vattnet när jag var där för att fiska", Info = "Undersökning gjorts på plats, ingen fläck har hittats", Action = "", InformerName = "Bengt Svensson", InformerPhone = "0432-5152255", Status = "Ingen åtgärd", Department = "Natur och Skogsvård", Employee = "Oskar Ivarsson"
+        RefNumber = "2017-45-0002", Place = "Småstadsjön", TypeOfCrime = "Oljeutsläpp", DateOfObservation = new DateTime(2017, 04, 29), Observation = "Jag såg en oljefläck på vattnet när jag var där för att fiska", Info = "Undersökning gjorts på plats, ingen fläck har hittats", Action = "", InformerName = "Bengt Svensson", InformerPhone = "0432-5152255", Status = "Ingen åtgärd", Department = "Natur och Skogsvård", Employee = "Oskar Ivarsson"
       },
       new Case
       {
-        ID = "2017-45-0003", Place = "Odehuset", TypeOfCrime= "Skrot", DateOfObservation = new DateTime(2017, 05, 02), Observation = "Anmälaren körde förbi ödehuset och upptäckte ett antal bilar och annat skrot", Info = "Undersökning har gjorts och bilder har tagits", Action = "", InformerName = "Olle Pettersson", InformerPhone = "0432-5255522", Status = "Påbörjad", Department = "Miljö och Hälsoskydd", Employee = "Lena Larsson"
+        RefNumber = "2017-45-0003", Place = "Odehuset", TypeOfCrime= "Skrot", DateOfObservation = new DateTime(2017, 05, 02), Observation = "Anmälaren körde förbi ödehuset och upptäckte ett antal bilar och annat skrot", Info = "Undersökning har gjorts och bilder har tagits", Action = "", InformerName = "Olle Pettersson", InformerPhone = "0432-5255522", Status = "Påbörjad", Department = "Miljö och Hälsoskydd", Employee = "Lena Larsson"
       },
       new Case
       {
-        ID = "2017-45-0004", Place = "Restaurang Krögaren", TypeOfCrime = "Buller", DateOfObservation = new DateTime(2017, 06, 04), Observation = "Restaurang hade för högt ljud på så man kunde inte sova", Info = "Bullermätning har gjorts. Håller sig inom riktvärden", Action = "Meddelat restaurangen att tänka på ljudet i fortsättningen", InformerName = "Roland Jönsson", InformerPhone = "0432-5322255", Status = "Klar", Department = "Miljö och Hälsoskydd", Employee = "Martin Kvist"
+        RefNumber = "2017-45-0004", Place = "Restaurang Krögaren", TypeOfCrime = "Buller", DateOfObservation = new DateTime(2017, 06, 04), Observation = "Restaurang hade för högt ljud på så man kunde inte sova", Info = "Bullermätning har gjorts. Håller sig inom riktvärden", Action = "Meddelat restaurangen att tänka på ljudet i fortsättningen", InformerName = "Roland Jönsson", InformerPhone = "0432-5322255", Status = "Klar", Department = "Miljö och Hälsoskydd", Employee = "Martin Kvist"
       },
       new Case
       {
-        ID = "2017-45-0005", Place = "Torget", TypeOfCrime = "Klotter", DateOfObservation = new DateTime(2017, 07, 10), Observation = "Samtliga Skräpkorgar och bänkar är nedklottrade", Info = "", Action = "", InformerName = "PEtter Svensson", InformerPhone = "0432-5322555", Status = "Inrapporterad", Department = "Ej tilsatt", Employee = "Ej tillsatt"
+        RefNumber = "2017-45-0005", Place = "Torget", TypeOfCrime = "Klotter", DateOfObservation = new DateTime(2017, 07, 10), Observation = "Samtliga Skräpkorgar och bänkar är nedklottrade", Info = "", Action = "", InformerName = "PEtter Svensson", InformerPhone = "0432-5322555", Status = "Inrapporterad", Department = "Ej tilsatt", Employee = "Ej tillsatt"
       }
     };
 

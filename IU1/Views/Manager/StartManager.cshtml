@@ -54,7 +54,7 @@
     {
         <tr>
             <td>@cases.DateOfObservation.ToString("d")</td>
-            <td><a asp-controller="Manager" asp-action="CrimeManager" asp-route-id="@cases.ID">@cases.ID</a></td>
+            <td><a asp-controller="Manager" asp-action="CrimeManager" asp-route-id="@cases.RefNumber">@cases.RefNumber</a></td>
             <td>@cases.TypeOfCrime</td>
             <td>@cases.Status</td>
             <td>@cases.Department</td>
