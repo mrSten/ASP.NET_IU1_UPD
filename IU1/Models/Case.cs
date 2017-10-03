@@ -12,9 +12,12 @@ namespace IU1.Models
     //Vanlig text räcker i kontrollerna förutom mob.nr. samt datum
 
     public String ID { get; set; }
+    public String RefNumber { get; set; }
+
     [Required(ErrorMessage = "Du måste fylla i en plats")]
     [Display(Name = "Var har brottet skett någonstans?")]
     public String Place { get; set; }
+
     [Required(ErrorMessage = "Du måste fylla i ett typ av brott")]
     [Display(Name = "Vilken typ av brott?")]
     public String TypeOfCrime { get; set; }
@@ -27,9 +30,11 @@ namespace IU1.Models
 
     [Display(Name = "Beskriv din observation (ex. namn på misstänkt person):")]
     public String Observation { get; set; }
+
     
     public String Info { get; set; }
     public String Action { get; set; }
+
     [Required(ErrorMessage = "Du måste fylla i ditt namn")]
     [Display(Name = "Ditt namn (för- och efternamn):")]
     public String InformerName { get; set; }
