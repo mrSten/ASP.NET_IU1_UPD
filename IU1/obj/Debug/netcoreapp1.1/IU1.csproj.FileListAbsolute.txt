@@ -31,3 +31,14 @@ C:\Users\Fredr\Desktop\Plugg\dotNet\GitDotnet\IU1\obj\Debug\netcoreapp1.1\IU1.As
 C:\Users\Fredr\Desktop\Plugg\dotNet\GitDotnet\IU1\obj\Debug\netcoreapp1.1\IU1.AssemblyInfo.cs
 C:\Users\Fredr\Desktop\Plugg\dotNet\GitDotnet\IU1\obj\Debug\netcoreapp1.1\IU1.dll
 C:\Users\Fredr\Desktop\Plugg\dotNet\GitDotnet\IU1\obj\Debug\netcoreapp1.1\IU1.pdb
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\bin\Debug\netcoreapp1.1\IU1.deps.json
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\bin\Debug\netcoreapp1.1\IU1.runtimeconfig.json
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\bin\Debug\netcoreapp1.1\IU1.runtimeconfig.dev.json
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\bin\Debug\netcoreapp1.1\IU1.dll
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\bin\Debug\netcoreapp1.1\IU1.pdb
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\obj\Debug\netcoreapp1.1\IU1.csprojResolveAssemblyReference.cache
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\obj\Debug\netcoreapp1.1\IU1.csproj.CoreCompileInputs.cache
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\obj\Debug\netcoreapp1.1\IU1.AssemblyInfoInputs.cache
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\obj\Debug\netcoreapp1.1\IU1.AssemblyInfo.cs
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\obj\Debug\netcoreapp1.1\IU1.dll
+C:\Users\Fredr\Desktop\Plugg\dotNet\IU3\EnviromentCrimes\IU1\obj\Debug\netcoreapp1.1\IU1.pdb

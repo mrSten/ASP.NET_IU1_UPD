@@ -10231,11 +10231,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fredr\\Desktop\\Plugg\\dotNet\\GitDotnet\\IU1\\IU1.csproj",
+      "projectUniqueName": "C:\\Users\\Fredr\\Desktop\\Plugg\\dotNet\\IU3\\EnviromentCrimes\\IU1\\IU1.csproj",
       "projectName": "IU1",
-      "projectPath": "C:\\Users\\Fredr\\Desktop\\Plugg\\dotNet\\GitDotnet\\IU1\\IU1.csproj",
+      "projectPath": "C:\\Users\\Fredr\\Desktop\\Plugg\\dotNet\\IU3\\EnviromentCrimes\\IU1\\IU1.csproj",
       "packagesPath": "C:\\Users\\Fredr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fredr\\Desktop\\Plugg\\dotNet\\GitDotnet\\IU1\\obj\\",
+      "outputPath": "C:\\Users\\Fredr\\Desktop\\Plugg\\dotNet\\IU3\\EnviromentCrimes\\IU1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fredr\\AppData\\Roaming\\NuGet\\NuGet.Config",
