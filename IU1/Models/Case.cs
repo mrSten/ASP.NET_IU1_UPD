@@ -6,12 +6,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace IU1.Models
 {
+  
   public class Case
   {
 
     //Vanlig text räcker i kontrollerna förutom mob.nr. samt datum
+    [Key]
     public int ID { get; set; }
-    public String RefNumber { get; set; }
+
+    public String RefNumber { get; set; } = "2017-45";
 
     [Required(ErrorMessage = "Du måste fylla i en plats")]
     [Display(Name = "Var har brottet skett någonstans?")]
