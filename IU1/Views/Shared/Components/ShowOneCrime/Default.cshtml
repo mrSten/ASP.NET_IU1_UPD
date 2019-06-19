@@ -45,7 +45,17 @@
     </p>
     <p>
         <span class="label">Provtagning: </span><br />
-        Provtagning.pdf
+        @if (Model.Samples.Count != 0)
+        {
+            foreach (Sample s in Model.Samples) {
+                <a href="~/Samples/@s.SampleName"><p>@s.SampleName</p></a>
+            }
+        }
+        else
+        {
+            <p>Inga samples uppladdade</p>
+        }
+        
     </p>
     <p>
         <span class="label">Ytterligare information: </span><br />
@@ -53,10 +63,20 @@
     </p>
     <p>
         <span class="label">Händelser: </span><br />
-        @Model.Action
+        @Model.Event
     </p>
     <p>
         <span class="label">Bilder: </span><br />
-        <img src="~/images/imagetest.jpg" alt="klicka på bilden" />
+        @if (Model.Pictures.Count != 0)
+        {
+            foreach (Picture pictures in Model.Pictures) {
+                 <img src="~/Pictures/@pictures.PictureName" alt="Klicka på bilden" height="150" width="150">
+             }    
+        }
+        else
+        {
+            <p>Inga bilder upplagda</p>
+        }
+        
     </p>
 </section>

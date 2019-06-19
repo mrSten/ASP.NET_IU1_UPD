@@ -4,10 +4,10 @@
 @{ Layout = "_NavInlogManagerLayout";
 }
 
-@model IFakeDataRepository
+@model InterfaceRepository
 
 <h2>Ärenden</h2>
-<p class="info">Du är inloggad som avdelningschef</p>
+<p class="info">Du är inloggad som avdelningschef: @ViewBag.User</p>
 
 <table id="managerForm">
     <tr>
@@ -21,17 +21,21 @@
         <td>
             <select name="status">
                 <option selected="selected">Välj alla</option>
-                @foreach (Status statuses in Model.Statuses) {
-                <option>@statuses.StatusName</option>
-                }
+               @foreach (Status statuses in Model.Statuses)
+               {
+                   <option>@statuses.StatusName</option>
+               }
+
             </select>
         </td>
         <td>
             <select name="investigator">
                 <option selected="selected">Välj alla</option>
-                @foreach (Employee employees in Model.Employees) {
+                @foreach (Employee employees in Model.GetRelevanEmployees())
+                {
                     <option>@employees.EmployeeName</option>
                 }
+                
             </select>
         </td>
         <td><input class="button" type="submit" value="Hämta lista" /></td>
@@ -50,7 +54,7 @@
         <th>Avdelning</th>
         <th>Handläggare</th>
     </tr>
-    @foreach (Case cases in Model.Cases)
+    @foreach (Case cases in Model.GetRelevantCases())
     {
         <tr>
             <td>@cases.DateOfObservation.ToString("d")</td>

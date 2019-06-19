@@ -14,7 +14,7 @@ namespace IU1.Models
     [Key]
     public int ID { get; set; }
 
-    public String RefNumber { get; set; } = "2017-45";
+    public String RefNumber { get; set; } = "2017-45-";
 
     [Required(ErrorMessage = "Du måste fylla i en plats")]
     [Display(Name = "Var har brottet skett någonstans?")]
@@ -35,7 +35,7 @@ namespace IU1.Models
 
     
     public String Info { get; set; }
-    public String Action { get; set; }
+    public String Event { get; set; }
 
     [Required(ErrorMessage = "Du måste fylla i ditt namn")]
     [Display(Name = "Ditt namn (för- och efternamn):")]
@@ -47,9 +47,14 @@ namespace IU1.Models
       ErrorMessage = "Formatet för mobilnummer ska vara 0xxx-xxxxxx")]
     [Display(Name = "Din telefon:")]
     public String InformerPhone { get; set; }
-    public String Status { get; set; }
+
+    public String Status { get; set; } = "Inrapporterad";
     public String Department { get; set; }
     public String Employee { get; set; }
+
+    public ICollection<Sample> Samples { get; set; }
+    public ICollection<Picture> Pictures { get; set; }
+
 
   }
 }

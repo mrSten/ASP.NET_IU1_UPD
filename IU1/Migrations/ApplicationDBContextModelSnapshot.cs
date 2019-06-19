@@ -21,13 +21,13 @@ namespace IU1.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Action");
-
                     b.Property<DateTime>("DateOfObservation");
 
                     b.Property<string>("Department");
 
                     b.Property<string>("Employee");
+
+                    b.Property<string>("Event");
 
                     b.Property<string>("Info");
 
@@ -82,6 +82,38 @@ namespace IU1.Migrations
                     b.ToTable("Employees");
                 });
 
+            modelBuilder.Entity("IU1.Models.Picture", b =>
+                {
+                    b.Property<int>("PictureID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CaseID");
+
+                    b.Property<string>("PictureName");
+
+                    b.HasKey("PictureID");
+
+                    b.HasIndex("CaseID");
+
+                    b.ToTable("Pictures");
+                });
+
+            modelBuilder.Entity("IU1.Models.Sample", b =>
+                {
+                    b.Property<int>("SampleID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CaseID");
+
+                    b.Property<string>("SampleName");
+
+                    b.HasKey("SampleID");
+
+                    b.HasIndex("CaseID");
+
+                    b.ToTable("Samples");
+                });
+
             modelBuilder.Entity("IU1.Models.Status", b =>
                 {
                     b.Property<string>("StatusID")
@@ -92,6 +124,22 @@ namespace IU1.Migrations
                     b.HasKey("StatusID");
 
                     b.ToTable("Statuses");
+                });
+
+            modelBuilder.Entity("IU1.Models.Picture", b =>
+                {
+                    b.HasOne("IU1.Models.Case")
+                        .WithMany("Pictures")
+                        .HasForeignKey("CaseID")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("IU1.Models.Sample", b =>
+                {
+                    b.HasOne("IU1.Models.Case")
+                        .WithMany("Samples")
+                        .HasForeignKey("CaseID")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
         }
     }

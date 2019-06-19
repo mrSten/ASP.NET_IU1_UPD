@@ -13,5 +13,7 @@ namespace IU1.Models
     public DbSet<Department> Departments { get; set; }
     public DbSet<Employee> Employees { get; set; }
     public DbSet<Status> Statuses { get; set; }
+    public DbSet<Sample> Samples { get; set; }
+    public DbSet<Picture> Pictures { get; set; }
   }
 }

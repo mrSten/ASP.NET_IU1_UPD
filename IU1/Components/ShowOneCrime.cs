@@ -10,10 +10,10 @@ namespace IU1.Components
 {
     public class ShowOneCrime: ViewComponent
     {
-      private IFakeDataRepository mymodel;
+      private InterfaceRepository mymodel;
 
       //Konstruktor för ShowOneCrime komponent
-      public ShowOneCrime(IFakeDataRepository mymode)
+      public ShowOneCrime(InterfaceRepository mymode)
       {
         mymodel = mymode;
       }
